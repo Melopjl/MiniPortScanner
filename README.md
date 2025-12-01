@@ -34,7 +34,7 @@ Feito para estudos de **cybersegurança**, **pentest básico** e **network funda
 ### 1️⃣ Clone o projeto
 ```bash
 git clone https://github.com/Melopjl/mini-port-scanner-flask
-cd mini-port-scanner-flask  
+cd MiniPortScanner 
 
 2️⃣ Instale as dependências
 pip install -r requirements.txt
