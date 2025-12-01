@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Port Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>🔍 Mini Port Scanner</h1>
+        <p class="subtitle">Scanner de portas rápido, simples e moderno.</p>
+    </div>
+
+    <div class="card">
+        <form action="/scan" method="post">
+            <label>IP ou Domínio:</label>
+            <input type="text" name="target" placeholder="ex: scanme.nmap.org" required>
+
+            <label>Portas (ex: 20-90 ou 80,443,8080):</label>
+            <input type="text" name="ports" placeholder="ex: 1-1024" required>
+
+            <button class="btn-scan" type="submit">🚀 Iniciar Scan</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Feito para estudos de segurança •</p>
+    </footer>
+</body>
+</html>

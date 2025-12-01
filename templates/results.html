@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado — Port Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="header">
+        <h1>📡 Resultado do Scan</h1>
+        <p class="subtitle">Host analisado: <b>{{ target }}</b></p>
+    </div>
+
+    <div class="card table-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Porta</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for port, status in results.items() %}
+                <tr class="fade-in">
+                    <td>{{ port }}</td>
+                    <td class="{{ 'open' if status == 'OPEN' else 'closed' }}">
+                        {{ status }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="/" class="btn-back">⬅ Voltar</a>
+    </div>
+
+    <footer>
+        <p>Mini Port Scanner • Desenvolvido para fins educacionais</p>
+    </footer>
+
+</body>
+</html>
