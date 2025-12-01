@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000368871f58a8f76548bb0cc33&ts=490155&p=fs&cid=1&sig=7d0ff0b84289eaec1c07427e0598428fb76fe82ce571d97c2c321984a3fdb86d&v=0" width="900">
+  <img src="./static/banner.png" width="900">
 </p>
 
 # 🔍 Mini Port Scanner — Flask
